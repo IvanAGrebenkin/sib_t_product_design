@@ -40,7 +40,7 @@ class _FlatItemsSelectionState extends State<FlatItemsSelection> {
       FlatItemDrawings (flatItemDrawingNumber: 'ПЭ 100', flatItemDrawingName: 'Блюдо 5,0л.',flatItemArt: '0812',flatItemCurrentDrawing: 'assets/drawings/flat_items/0812/ПЭ 100 Блюдо вм. 5,0 л.webp',),
       FlatItemDrawings (flatItemDrawingNumber: 'ПЭ 98', flatItemDrawingName: 'Таз 7,0л.',flatItemArt: '3020',flatItemCurrentDrawing: 'assets/drawings/flat_items/3020/ПЭ 98 Таз вм. 7,0 л (27.05.18).webp',),
       FlatItemDrawings (flatItemDrawingNumber: 'ПЭ 66', flatItemDrawingName: 'Таз 9,5л.',flatItemArt: '3021',flatItemCurrentDrawing: 'assets/drawings/flat_items/3021/ПЭ 66 Таз вм. 9,5 л (27.07.18).webp',),
-      FlatItemDrawings (flatItemDrawingNumber: 'ПЭ 27.А', flatItemDrawingName: 'Таз 12,0л.',flatItemArt: '3024',flatItemCurrentDrawing: 'assets/drawings/flat_items/3024/ПЭ 27.А Таз вм. 12,0 л (27.07.18).webp',),
+      FlatItemDrawings (flatItemDrawingNumber: 'ПЭ 27.А', flatItemDrawingName: 'Таз 12,0л.',flatItemArt: '3024',flatItemCurrentDrawing: 'assets/drawings/flat_items/3024/ПЭ 27.А Таз вм. 12,0 л.webp',),
       FlatItemDrawings (flatItemDrawingNumber: 'ПЭ 73', flatItemDrawingName: 'Таз 16,0л.',flatItemArt: '3026',flatItemCurrentDrawing: 'assets/drawings/flat_items/3026/ПЭ 73 Таз вм. 16,0 л (27.07.18).webp',),
     ];
 
