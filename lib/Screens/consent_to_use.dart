@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sib_t_product_design/Utils/decoration.dart';
+import 'package:sib_t_product_design/Utils/navigation.dart';
 
 class ConsentToUse extends StatefulWidget {
   const ConsentToUse({Key? key}) : super(key: key);
@@ -36,7 +37,7 @@ class _ConsentToUseState extends State<ConsentToUse> {
                 height:42,
                 child: ElevatedButton(
                   style: elevatedButtonDecoration,// Оформление кнопки
-                  onPressed: _isDisable? null : (){Navigator.pushNamed(context, '/group_selection_screen');},// Действие по нажатию
+                  onPressed: _isDisable? null : (){Navigator.pushNamed(context, MainNavigationRouteNames.groupSelectionScreen);},// Действие по нажатию
                   child: const Text('Принять',
                     style: TextStyle(
                       fontSize: 18,

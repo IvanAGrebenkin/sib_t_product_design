@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sib_t_product_design/Utils/navigation.dart';
 import '../Utils/decoration.dart';
 import '../Utils/widgets.dart';
 
@@ -32,7 +33,7 @@ class _GroupSelectionScreenState extends State<GroupSelectionScreen> {
                   SizedBox(height: 126,width: 178,
                     child: ElevatedButton(
                       style: groupButtonDecoration,
-                      onPressed: (){Navigator.pushNamed(context, '/pan_selection_screen');},
+                      onPressed: (){Navigator.pushNamed(context, MainNavigationRouteNames.panSelection);},
                       child: Column(
                         children: [
                           Expanded(child: Image.asset ('assets/images/pan_group.png',),),
@@ -53,7 +54,7 @@ class _GroupSelectionScreenState extends State<GroupSelectionScreen> {
                   SizedBox(height: 126,width: 178,
                     child: ElevatedButton(
                       style: groupButtonDecoration,
-                      onPressed: (){Navigator.pushNamed(context, '/kettle_selection_screen');},
+                      onPressed: (){Navigator.pushNamed(context, MainNavigationRouteNames.kettleSelection);},
                       child: Column(
                         children: [
                           Expanded(child: Image.asset ('assets/images/kettle_group.png',),),
@@ -74,7 +75,7 @@ class _GroupSelectionScreenState extends State<GroupSelectionScreen> {
                   SizedBox(height: 126,width: 178,
                     child: ElevatedButton(
                       style: groupButtonDecoration,
-                      onPressed: (){Navigator.pushNamed(context, '/household_items_selection_screen');},
+                      onPressed: (){Navigator.pushNamed(context, MainNavigationRouteNames.householdItemsSelection);},
                       child: Column(
                         children: [
                           Expanded(child: Image.asset ('assets/images/household_items_group.png',),),
@@ -95,7 +96,7 @@ class _GroupSelectionScreenState extends State<GroupSelectionScreen> {
                   SizedBox(height: 126,width: 178,
                     child: ElevatedButton(
                       style: groupButtonDecoration,
-                      onPressed: (){Navigator.pushNamed(context, '/flat_items_selection_screen');},
+                      onPressed: (){Navigator.pushNamed(context, MainNavigationRouteNames.flatItemsSelection);},
                       child: Column(
                         children: [
                           Expanded(child: Image.asset ('assets/images/flat_items_group.png',),),

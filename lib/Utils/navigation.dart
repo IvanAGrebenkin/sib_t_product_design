@@ -33,6 +33,10 @@ abstract class MainNavigationRouteNames {
 }
 
 class MainNavigation {
+  String initialRoute (bool isAuth) => isAuth
+      ? MainNavigationRouteNames.groupSelectionScreen
+      : MainNavigationRouteNames.authScreen;
+
   final routes = <String,Widget Function(BuildContext)>{
     '/': (context) => const AuthScreen(),
     '/consent_to_use': (context) => const ConsentToUse(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sib_t_product_design/Utils/navigation.dart';
 import '../Utils/decoration.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -20,7 +21,7 @@ class _AuthScreenState extends State<AuthScreen> {
     final password = _passwordTextController.text;
     if (login == 'admin' && password == 'admin') {
       errorText = null;
-      Navigator.pushNamed(context, '/consent_to_use');
+      Navigator.pushNamed(context, MainNavigationRouteNames.consentToUse);
     }
     else {
       errorText = 'Не верный логин или пароль.';

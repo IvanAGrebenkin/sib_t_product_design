@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sib_t_product_design/Utils/navigation.dart';
 
 
 PreferredSizeWidget homePageAppBar(context, pageName) => AppBar(
@@ -42,7 +43,8 @@ PreferredSizeWidget nextPageAppBar(context, pageName) => AppBar(
     actions: <Widget>[
       IconButton(
         tooltip: 'На начальную страницу',
-        onPressed: (){Navigator.pushNamed(context, '/group_selection_screen');},
+        onPressed: (){Navigator.pushNamed(context, MainNavigationRouteNames.groupSelectionScreen);},
+        // onPressed: (){Navigator.pushNamed(context, '/group_selection_screen');},
         icon: const Icon(Icons.home),),// Кнопка перехода на экран выбора группы
       IconButton(
         tooltip: 'На предыдущую страницу',
@@ -72,7 +74,7 @@ PreferredSizeWidget drawingViewScreenPageAppBar(context, pageName) => AppBar(
     actions: <Widget>[
       IconButton(
         tooltip: 'На начальную страницу',
-        onPressed: (){Navigator.pushNamed(context, '/group_selection_screen');},
+        onPressed: (){Navigator.pushNamed(context, MainNavigationRouteNames.groupSelectionScreen);},
         icon: const Icon(Icons.home),),// Кнопка перехода на экран выбора группы
       IconButton(
         tooltip: 'На предыдущую страницу',
@@ -102,7 +104,7 @@ PreferredSizeWidget panDrawingSelectionScreenAppBar(context, pageName) => AppBar
     actions: <Widget>[
       IconButton(
         tooltip: 'На начальную страницу',
-        onPressed: (){Navigator.pushNamed(context, '/group_selection_screen');},
+        onPressed: (){Navigator.pushNamed(context, MainNavigationRouteNames.groupSelectionScreen);},
         icon: const Icon(Icons.home),),// Кнопка перехода на экран выбора группы
       IconButton(
         tooltip: 'На предыдущую страницу',
@@ -139,7 +141,7 @@ Widget navDrawer(context) => Drawer(
                 padding: EdgeInsets.only(left: 40.0),
                 child: Text('Кастрюли',),
               ),
-              onTap: (){Navigator.pushNamed(context, '/pan_selection_screen');},
+              onTap: (){Navigator.pushNamed(context, MainNavigationRouteNames.panSelection);},
             ),// Кнопка перехода к списку кастрюль
             ListTile(
               leading: SizedBox(
@@ -149,7 +151,7 @@ Widget navDrawer(context) => Drawer(
                 padding: EdgeInsets.only(left: 38.0),
                 child: Text('Чайники'),
               ),
-              onTap: (){Navigator.pushNamed(context, '/kettle_selection_screen');},
+              onTap: (){Navigator.pushNamed(context, MainNavigationRouteNames.kettleSelection);},
             ),// Кнопка перехода к списку чайников
             ListTile(
               leading: SizedBox(
@@ -159,7 +161,7 @@ Widget navDrawer(context) => Drawer(
                 padding: EdgeInsets.only(left: 22.0),
                 child: Text('Хозяйственные изделия'),
               ),
-              onTap: (){Navigator.pushNamed(context, '/household_items_selection_screen');},
+              onTap: (){Navigator.pushNamed(context, MainNavigationRouteNames.householdItemsSelection);},
             ),// Кнопка перехода к к списку хозяйственных изделий
             ListTile(
               leading: SizedBox(
@@ -169,7 +171,7 @@ Widget navDrawer(context) => Drawer(
                 padding: EdgeInsets.only(left: 45.0),
                 child: Text('Плоские изделия'),
               ),
-              onTap: (){Navigator.pushNamed(context, '/flat_items_selection_screen');},
+              onTap: (){Navigator.pushNamed(context, MainNavigationRouteNames.flatItemsSelection);},
             ),// Кнопка перехода к к списку плоских изделий
             const Divider(
               thickness: 2,

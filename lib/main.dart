@@ -37,7 +37,7 @@ class _SibTProductDesignAppState extends State<SibTProductDesignApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SibTProductDesignApp',
-      initialRoute: '/',
+      initialRoute: mainNavigation.initialRoute(false),
       routes: mainNavigation.routes,
       // routes: {
       //   '/': (context) => const AuthScreen(),
